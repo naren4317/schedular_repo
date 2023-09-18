@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="schedular2Flow" doc:id="0245149a-fe3e-46e8-8236-5fcf36acbbbb" >
 		<http:listener doc:name="Listener" doc:id="2a3ad334-3a9b-47e8-96df-83c13e9af81c" config-ref="HTTP_Listener_config" path="/test" outputMimeType="text/plain"/>
 		<set-payload value='#["hi naren"]' doc:name="Set Payload" doc:id="9b28fe38-1f36-4cf3-9cf0-6e0d4b72cce3" />
+		<logger level="INFO" doc:name="Logger" doc:id="4cd5a381-85d5-45e2-99f4-c08cfd60ee7c" message="hi"/>
 	</flow>
 </mule>
